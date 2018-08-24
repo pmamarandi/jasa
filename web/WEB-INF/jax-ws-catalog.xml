@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/BicirepuestosLogicaNegocio/BicirepuestosLogicaNegocio?wsdl" uri="wsdl/localhost_8080/BicirepuestosLogicaNegocio/BicirepuestosLogicaNegocio.wsdl"/>
+    <system systemId="http://localhost:8080/BicirepuestosLogicaNegocio/BicirepuestosLogicaNegocio?xsd=1" uri="wsdl/localhost_8080/BicirepuestosLogicaNegocio/BicirepuestosLogicaNegocio.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/factimeLN/factimeLogicaNegocio?wsdl" uri="wsdl/localhost_8080/factimeLN/factimeLogicaNegocio.wsdl"/>
+    <system systemId="http://localhost:8080/factimeLN/factimeLogicaNegocio?xsd=1" uri="wsdl/localhost_8080/factimeLN/factimeLogicaNegocio.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/factimeLN/factimeLogicaNegocio?xsd=2" uri="wsdl/localhost_8080/factimeLN/factimeLogicaNegocio.xsd_2.xsd"/>
+    <system systemId="http://localhost:8080/afernandezLN/factimeLogicaNegocio?wsdl" uri="wsdl/localhost_8080/afernandezLN/factimeLogicaNegocio.wsdl"/>
+    <system systemId="http://localhost:8080/afernandezLN/factimeLogicaNegocio?xsd=1" uri="wsdl/localhost_8080/afernandezLN/factimeLogicaNegocio.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/afernandezLN/factimeLogicaNegocio?xsd=2" uri="wsdl/localhost_8080/afernandezLN/factimeLogicaNegocio.xsd_2.xsd"/>
+    <system systemId="http://localhost:8080/iejsaLN/factimeLogicaNegocio?wsdl" uri="wsdl/localhost_8080/iejsaLN/factimeLogicaNegocio.wsdl"/>
+    <system systemId="http://localhost:8080/iejsaLN/factimeLogicaNegocio?xsd=1" uri="wsdl/localhost_8080/iejsaLN/factimeLogicaNegocio.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/iejsaLN/factimeLogicaNegocio?xsd=2" uri="wsdl/localhost_8080/iejsaLN/factimeLogicaNegocio.xsd_2.xsd"/>
+    <system systemId="http://localhost:8080/iejsaLN_DIRECTORIO/factimeLogicaNegocio_directorio?wsdl" uri="wsdl/localhost_8080/iejsaLN_DIRECTORIO/factimeLogicaNegocio_directorio.wsdl"/>
+    <system systemId="http://localhost:8080/iejsaLN_DIRECTORIO/factimeLogicaNegocio_directorio?xsd=1" uri="wsdl/localhost_8080/iejsaLN_DIRECTORIO/factimeLogicaNegocio_directorio.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/iejsaLN_DIRECTORIO/factimeLogicaNegocio_directorio?xsd=2" uri="wsdl/localhost_8080/iejsaLN_DIRECTORIO/factimeLogicaNegocio_directorio.xsd_2.xsd"/>
+</catalog>

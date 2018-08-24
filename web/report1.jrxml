@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a2b4ff61-946d-4c40-abbe-66e1b0969946">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Title" fontName="Arial" fontSize="26" isBold="true" pdfFontName="Helvetica-Bold"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT tp.productodescripcion,tp.productocodigo, tpp.productoprocedenciadescripcion,tm.productomarcadescripcion
+ FROM tablaproducto tp inner join
+        tablaproductomarca tm on tp.productoproductomarcaid=tm.productomarcaid  
+        inner join tablaproductoprocedencia tpp 
+        on tpp.productoprocedenciaid=tp.productoproductoprocedenciaid ORDER BY tp.productoid DESC]]>
+	</queryString>
+	<field name="productodescripcion" class="java.lang.String"/>
+	<field name="productocodigo" class="java.lang.String"/>
+	<field name="productoprocedenciadescripcion" class="java.lang.String"/>
+	<field name="productomarcadescripcion" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="70" splitType="Stretch">
+			<staticText>
+				<reportElement style="Title" x="0" y="13" width="263" height="33" uuid="e3910791-5707-4606-9d2c-36092f10b445"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Productos]]></text>
+			</staticText>
+			<image>
+				<reportElement x="363" y="5" width="139" height="41" uuid="cb2628aa-47f5-4d5a-a39a-3481a2f21d82"/>
+				<imageExpression><![CDATA["C:\\Users\\Erover Pc\\Desktop\\PRACTICAS\\iejsaIU\\web\\estilos\\Login_v2\\images\\index-logo-2.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="36" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="35" width="555" height="1" uuid="1acd8c8d-fd8d-47f2-a8bb-96450704d0e5"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement style="Column header" x="138" y="19" width="138" height="15" uuid="cfe6c69b-a1ea-4256-9c02-4a4f87419a78"/>
+				<text><![CDATA[Producto]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="276" y="19" width="138" height="15" uuid="7fcf60f0-6d6e-4ba7-bc8b-21bbf061096e"/>
+				<text><![CDATA[Linea]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="414" y="19" width="138" height="15" uuid="6eb86547-7a46-4807-9a86-638400ebf3cc"/>
+				<text><![CDATA[Marca]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="0" y="19" width="103" height="15" uuid="fba699cb-d6b5-4736-9593-f73877079db5"/>
+				<text><![CDATA[Còdigo]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="19" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="15" width="555" height="1" uuid="541e21f8-6973-43a9-b047-59ce99e5533f"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement style="Detail" x="125" y="1" width="138" height="15" uuid="3c45a0f0-9ce3-4c36-bad5-2ab241fde8f4"/>
+				<textFieldExpression><![CDATA[$F{productodescripcion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="0" y="1" width="103" height="15" uuid="522f44d5-8bf2-447b-a596-99f5bc4297fe"/>
+				<textFieldExpression><![CDATA[$F{productocodigo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="276" y="0" width="138" height="15" uuid="57c80413-1c73-4bbb-ba42-c7de2d63da65"/>
+				<textFieldExpression><![CDATA[$F{productoprocedenciadescripcion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="414" y="0" width="138" height="15" uuid="7170a73b-f84f-446b-8043-153e3cdf3903"/>
+				<textFieldExpression><![CDATA[$F{productomarcadescripcion}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="3" width="555" height="1" uuid="3da770fb-accb-43ac-a715-7cb96d67841a"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement style="Column header" x="433" y="0" width="80" height="20" uuid="d83d0637-b3b0-44bf-b6c3-44b9ff356d19"/>
+				<textElement textAlignment="Right">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement style="Column header" x="513" y="0" width="40" height="20" uuid="7721e287-8df6-4028-abac-06a7d836a05d"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement style="Column header" x="0" y="0" width="197" height="20" uuid="094667c8-73e7-433c-9f25-e8dc9da3715c"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

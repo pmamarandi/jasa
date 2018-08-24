@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7e6edc77-908e-4a4c-8b58-e97088008ece">
+	<queryString language="SQL">
+		<![CDATA[SELECT facturanumero,facturaclientecedula,clientenombre,clienteapellido,clientedireccion,telefonopersonatelefono,
+               facturafechacompra,detallefacturaproductocantidad,detallefacturaproductopreciounitario,detallefacturapreciototal,
+                productodescripcion,detallefacturaproductoid,facturasubtotal,facturaiva,facturatotal,facturaestado
+                FROM tablafactura tf
+                INNER JOIN tablacliente tc ON tc.clientecedula=tf.facturaclientecedula
+                INNER JOIN tabladetallefacturaregistro td ON td.detallefacturafacturaid=tf.facturanumero
+                INNER JOIN tablatelefonopersona fo ON fo.telefonopersonaclienteid=tf.facturaclientecedula
+                INNER JOIN tablaproducto pr ON td.detallefacturaproductoid=pr.productoid
+               where facturanumero = '152' AND facturaestado = 1]]>
+	</queryString>
+	<field name="facturanumero" class="java.lang.Integer"/>
+	<field name="facturaclientecedula" class="java.lang.String"/>
+	<field name="clientenombre" class="java.lang.String"/>
+	<field name="clienteapellido" class="java.lang.String"/>
+	<field name="clientedireccion" class="java.lang.String"/>
+	<field name="telefonopersonatelefono" class="java.lang.String"/>
+	<field name="facturafechacompra" class="java.sql.Date"/>
+	<field name="detallefacturaproductocantidad" class="java.lang.Integer"/>
+	<field name="detallefacturaproductopreciounitario" class="java.math.BigDecimal"/>
+	<field name="detallefacturapreciototal" class="java.math.BigDecimal"/>
+	<field name="productodescripcion" class="java.lang.String"/>
+	<field name="detallefacturaproductoid" class="java.lang.Integer"/>
+	<field name="facturasubtotal" class="java.math.BigDecimal"/>
+	<field name="facturaiva" class="java.math.BigDecimal"/>
+	<field name="facturatotal" class="java.math.BigDecimal"/>
+	<field name="facturaestado" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

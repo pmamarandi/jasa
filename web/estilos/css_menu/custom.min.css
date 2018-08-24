@@ -1,0 +1,8 @@
+.top_nav .navbar-right li{display:inline-block;float:right;position:static}@media (min-width: 480px){.top_nav .navbar-right li{position:relative}}.top_nav .dropdown-menu li{width:100%}.top_nav .dropdown-menu li a{width:100%;padding:12px 20px}.top_nav li a i{font-size:15px}.navbar-static-top{position:fixed;top:0;width:100%}.sidebar-header{border-bottom:0;margin-top:46px}.sidebar-header:first-of-type{margin-top:0}.nav.side-menu>li{position:relative;display:block;cursor:pointer}.nav.side-menu>li>a{margin-bottom:6px}.nav.side-menu>li>a:hover{color:#F2F5F7 !important}.nav.side-menu>li>a:hover,.nav>li>a:focus{text-decoration:none;background:transparent}.nav.child_menu{display:none}
+/*!
+ * bootstrap-vertical-tabs - v1.2.1
+ * https://dbtek.github.io/bootstrap-vertical-tabs
+ * 2014-11-07
+ * Copyright (c) 2014 İsmail Demirbilek
+ * License: MIT
+ */

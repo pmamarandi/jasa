@@ -1,0 +1,251 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://ServicioWeb.factime.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ServicioWeb.factime.com/">
+
+<xs:complexType name="cliente">
+<xs:sequence>
+<xs:element name="clienteApellido" type="xs:string" minOccurs="0"/>
+<xs:element name="clienteCedula" type="xs:string" minOccurs="0"/>
+<xs:element name="clienteClave" type="xs:string" minOccurs="0"/>
+<xs:element name="clienteDireccion" type="xs:string" minOccurs="0"/>
+<xs:element name="clienteId" type="xs:int" minOccurs="0"/>
+<xs:element name="clienteNombre" type="xs:string" minOccurs="0"/>
+<xs:element name="clienteNumeroCompras" type="xs:int" minOccurs="0"/>
+<xs:element name="clienteTelefono" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="clienteFactura">
+<xs:complexContent>
+<xs:extension base="tns:cliente">
+<xs:sequence>
+<xs:element name="totalFacturas" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="factura">
+<xs:complexContent>
+<xs:extension base="tns:clienteFactura">
+<xs:sequence>
+<xs:element name="facturaclienteapellido" type="xs:string" minOccurs="0"/>
+<xs:element name="facturaclientecedula" type="xs:string" minOccurs="0"/>
+<xs:element name="facturaclientedireccion" type="xs:string" minOccurs="0"/>
+<xs:element name="facturaclienteid" type="xs:int" minOccurs="0"/>
+<xs:element name="facturaclientenombre" type="xs:string" minOccurs="0"/>
+<xs:element name="facturaclientetelefono" type="xs:string" minOccurs="0"/>
+<xs:element name="facturadetallecantidad" type="xs:int" minOccurs="0"/>
+<xs:element name="facturadetalledescripcion" type="xs:string" minOccurs="0"/>
+<xs:element name="facturadetallepreciounitario" type="xs:double" minOccurs="0"/>
+<xs:element name="facturadetalleproductoid" type="xs:int" minOccurs="0"/>
+<xs:element name="facturadetallesubtotal" type="xs:double" minOccurs="0"/>
+<xs:element name="facturaestado" type="xs:int" minOccurs="0"/>
+<xs:element name="facturafechacompra" type="xs:string" minOccurs="0"/>
+<xs:element name="facturaid" type="xs:int" minOccurs="0"/>
+<xs:element name="facturaiva" type="xs:double" minOccurs="0"/>
+<xs:element name="facturanumero" type="xs:int" minOccurs="0"/>
+<xs:element name="facturasubtotal" type="xs:double" minOccurs="0"/>
+<xs:element name="facturatotal" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="detalleFactura">
+<xs:complexContent>
+<xs:extension base="tns:factura">
+<xs:sequence>
+<xs:element name="codproducto" type="xs:string" minOccurs="0"/>
+<xs:element name="detallefacturafacturaid" type="xs:int" minOccurs="0"/>
+<xs:element name="detallefacturapreciototal" type="xs:double" minOccurs="0"/>
+<xs:element name="detallefacturaproductocantidad" type="xs:int" minOccurs="0"/>
+<xs:element name="detallefacturaproductodescripcion" type="xs:string" minOccurs="0"/>
+<xs:element name="detallefacturaproductoid" type="xs:int" minOccurs="0"/>
+<xs:element name="detallefacturaproductopreciounitario" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="proveedor">
+<xs:sequence>
+<xs:element name="proveedorCiudad" type="xs:string" minOccurs="0"/>
+<xs:element name="proveedorDireccion" type="xs:string" minOccurs="0"/>
+<xs:element name="proveedorId" type="xs:int" minOccurs="0"/>
+<xs:element name="proveedorNombre" type="xs:string" minOccurs="0"/>
+<xs:element name="proveedorRuc" type="xs:string" minOccurs="0"/>
+<xs:element name="telefonoProveedor" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="proveedorFacturaAbastece">
+<xs:complexContent>
+<xs:extension base="tns:proveedor">
+<xs:sequence>
+<xs:element name="totalFacturasAbastece" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="facturaAbastece">
+<xs:complexContent>
+<xs:extension base="tns:proveedorFacturaAbastece">
+<xs:sequence>
+<xs:element name="facturaAbasteceEstado" type="xs:int" minOccurs="0"/>
+<xs:element name="facturaAbasteceFecha" type="xs:string" minOccurs="0"/>
+<xs:element name="facturaAbasteceId" type="xs:int" minOccurs="0"/>
+<xs:element name="facturaAbasteceNumero" type="xs:int" minOccurs="0"/>
+<xs:element name="facturaAbasteceProveedorId" type="xs:int" minOccurs="0"/>
+<xs:element name="facturaAbasteceSubtotal" type="xs:double" minOccurs="0"/>
+<xs:element name="facturaAbasteceTotal" type="xs:double" minOccurs="0"/>
+<xs:element name="faturaAbasteceIva" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="imagen">
+<xs:sequence>
+<xs:element name="archivo" type="xs:string" minOccurs="0"/>
+<xs:element name="codigoproducto" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+<xs:element name="idproducto" type="xs:string" minOccurs="0"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="rutafisica" type="xs:string" minOccurs="0"/>
+<xs:element name="tipo" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="producto">
+<xs:complexContent>
+<xs:extension base="tns:marca">
+<xs:sequence>
+<xs:element name="productoCodigo" type="xs:string" minOccurs="0"/>
+<xs:element name="productoDescripcion" type="xs:string" minOccurs="0"/>
+<xs:element name="productoId" type="xs:int" minOccurs="0"/>
+<xs:element name="productoPrecioUnitario" type="xs:double" minOccurs="0"/>
+<xs:element name="productoStock" type="xs:int" minOccurs="0"/>
+<xs:element name="texto" type="xs:string" minOccurs="0"/>
+<xs:element name="tipo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="marca">
+<xs:complexContent>
+<xs:extension base="tns:procedencia">
+<xs:sequence>
+<xs:element name="productoMarcaDescripcion" type="xs:string" minOccurs="0"/>
+<xs:element name="productoMarcaId" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="procedencia">
+<xs:sequence>
+<xs:element name="productoProcedenciaDescripcion" type="xs:string" minOccurs="0"/>
+<xs:element name="productoProcedenciaId" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="compraProducto">
+<xs:complexContent>
+<xs:extension base="tns:producto">
+<xs:sequence>
+<xs:element name="cantidad" type="xs:int" minOccurs="0"/>
+<xs:element name="codigoproducto" type="xs:int" minOccurs="0"/>
+<xs:element name="compraNumero" type="xs:int" minOccurs="0"/>
+<xs:element name="detallenombreproducto" type="xs:string" minOccurs="0"/>
+<xs:element name="direccion" type="xs:string" minOccurs="0"/>
+<xs:element name="fecha" type="xs:string" minOccurs="0"/>
+<xs:element name="idProducto" type="xs:int" minOccurs="0"/>
+<xs:element name="iva" type="xs:int" minOccurs="0"/>
+<xs:element name="nombreproveedor" type="xs:string" minOccurs="0"/>
+<xs:element name="precioUnitario" type="xs:double" minOccurs="0"/>
+<xs:element name="precioproducto" type="xs:double" minOccurs="0"/>
+<xs:element name="ruc" type="xs:string" minOccurs="0"/>
+<xs:element name="subtotal" type="xs:double" minOccurs="0"/>
+<xs:element name="subtotalFactura" type="xs:double" minOccurs="0"/>
+<xs:element name="telefonoproveedor" type="xs:string" minOccurs="0"/>
+<xs:element name="total" type="xs:double" minOccurs="0"/>
+<xs:element name="totalAbastece" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="venta">
+<xs:sequence>
+<xs:element name="cantidad" type="xs:int" minOccurs="0"/>
+<xs:element name="codigoProducto" type="xs:string" minOccurs="0"/>
+<xs:element name="descripcion" type="xs:string" minOccurs="0"/>
+<xs:element name="fechaVenta" type="xs:string" minOccurs="0"/>
+<xs:element name="idProducto" type="xs:int" minOccurs="0"/>
+<xs:element name="idVenta" type="xs:int" minOccurs="0"/>
+<xs:element name="precioUnitario" type="xs:double" minOccurs="0"/>
+<xs:element name="subtotal" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="compra">
+<xs:sequence>
+<xs:element name="abasteceproveedorciudad" type="xs:string" minOccurs="0"/>
+<xs:element name="abasteceproveedordireccion" type="xs:string" minOccurs="0"/>
+<xs:element name="abasteceproveedorid" type="xs:int" minOccurs="0"/>
+<xs:element name="abasteceproveedornombre" type="xs:string" minOccurs="0"/>
+<xs:element name="abasteceproveedorruc" type="xs:string" minOccurs="0"/>
+<xs:element name="compraFecha" type="xs:string" minOccurs="0"/>
+<xs:element name="compraId" type="xs:int" minOccurs="0"/>
+<xs:element name="compraIva" type="xs:double" minOccurs="0"/>
+<xs:element name="compraNumero" type="xs:int" minOccurs="0"/>
+<xs:element name="compraProveedorId" type="xs:int" minOccurs="0"/>
+<xs:element name="compraSubtotal" type="xs:double" minOccurs="0"/>
+<xs:element name="compraTotal" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="empleado">
+<xs:sequence>
+<xs:element name="empleadoApellido" type="xs:string" minOccurs="0"/>
+<xs:element name="empleadoCedula" type="xs:string" minOccurs="0"/>
+<xs:element name="empleadoClave" type="xs:string" minOccurs="0"/>
+<xs:element name="empleadoDireccion" type="xs:string" minOccurs="0"/>
+<xs:element name="empleadoId" type="xs:int" minOccurs="0"/>
+<xs:element name="empleadoIngresoFecha" type="xs:string" minOccurs="0"/>
+<xs:element name="empleadoNombre" type="xs:string" minOccurs="0"/>
+<xs:element name="empleadoSueldo" type="xs:float" minOccurs="0"/>
+<xs:element name="empleadoTelefono" type="xs:string" minOccurs="0"/>
+<xs:element name="empleadoTiempo" type="xs:int" minOccurs="0"/>
+<xs:element name="empleadoTipo" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="gasto">
+<xs:sequence>
+<xs:element name="empleadoCedula" type="xs:string" minOccurs="0"/>
+<xs:element name="gastoDetalle" type="xs:string" minOccurs="0"/>
+<xs:element name="gastoFecha" type="xs:string" minOccurs="0"/>
+<xs:element name="gastoId" type="xs:int" minOccurs="0"/>
+<xs:element name="gastoValor" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="telefonoPersona">
+<xs:sequence>
+<xs:element name="telefonoPersonaClienteId" type="xs:string" minOccurs="0"/>
+<xs:element name="telefonoPersonaEmpleadoId" type="xs:string" minOccurs="0"/>
+<xs:element name="telefonoPersonaId" type="xs:int" minOccurs="0"/>
+<xs:element name="telefonoPersonaTelefono" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="telefonoProveedor">
+<xs:sequence>
+<xs:element name="telefonoProveedorId" type="xs:int" minOccurs="0"/>
+<xs:element name="telefonoProveedorRuc" type="xs:string" minOccurs="0"/>
+<xs:element name="telefonoProveedortelefono" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

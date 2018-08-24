@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Productos>
+<Producto id="0">
+<Codigo>LL54S</Codigo>
+<Descripcion>Llanta Excel 26</Descripcion>
+<Marca>Logan</Marca>
+<Procedencia>Tailandia</Procedencia>
+<Stock>9</Stock>
+<Precio>11.5</Precio>
+</Producto>
+<Producto id="1">
+<Codigo>HDV235</Codigo>
+<Descripcion>Manubrio BMX negro</Descripcion>
+<Marca>Logan</Marca>
+<Procedencia>China</Procedencia>
+<Stock>2</Stock>
+<Precio>1.25</Precio>
+</Producto>
+<Producto id="2">
+<Codigo>MAZ050</Codigo>
+<Descripcion>Manzana de 36h posterior</Descripcion>
+<Marca>Logan</Marca>
+<Procedencia>China</Procedencia>
+<Stock>3</Stock>
+<Precio>0.89</Precio>
+</Producto>
+<Producto id="3">
+<Codigo>CAT46</Codigo>
+<Descripcion>Catalina de aluminio</Descripcion>
+<Marca>Logan</Marca>
+<Procedencia>Taiwan</Procedencia>
+<Stock>2</Stock>
+<Precio>18.0</Precio>
+</Producto>
+<Producto id="4">
+<Codigo>AR15</Codigo>
+<Descripcion>Aro de llanta 26</Descripcion>
+<Marca>Logan</Marca>
+<Procedencia>Taiwan</Procedencia>
+<Stock>16</Stock>
+<Precio>4.5</Precio>
+</Producto>
+<Producto id="5">
+<Codigo>PF57S</Codigo>
+<Descripcion>Palanca de frenos </Descripcion>
+<Marca>Zoom</Marca>
+<Procedencia>China</Procedencia>
+<Stock>45</Stock>
+<Precio>20.5</Precio>
+</Producto>
+<Producto id="6">
+<Codigo>LLA62</Codigo>
+<Descripcion>Llanta 26 Pantanera</Descripcion>
+<Marca>Zoom</Marca>
+<Procedencia>China</Procedencia>
+<Stock>40</Stock>
+<Precio>11.0</Precio>
+</Producto>
+<Producto id="7">
+<Codigo>SSSS</Codigo>
+<Descripcion>Un condon de aluminio</Descripcion>
+<Marca>Rocky</Marca>
+<Procedencia>Brasil</Procedencia>
+<Stock>10</Stock>
+<Precio>2.54</Precio>
+</Producto>
+<Producto id="8">
+<Codigo>EEE44</Codigo>
+<Descripcion>radio aluminio</Descripcion>
+<Marca>Rocky</Marca>
+<Procedencia>Taiwan</Procedencia>
+<Stock>12</Stock>
+<Precio>5.0</Precio>
+</Producto>
+<Producto id="9">
+<Codigo>EEE45</Codigo>
+<Descripcion>llanta metal</Descripcion>
+<Marca>Fortune</Marca>
+<Procedencia>Colombia</Procedencia>
+<Stock>5</Stock>
+<Precio>10.0</Precio>
+</Producto>
+<Producto id="10">
+<Codigo>SP34G</Codigo>
+<Descripcion>Cuadro de aluminio </Descripcion>
+<Marca>Fortune</Marca>
+<Procedencia>Brasil</Procedencia>
+<Stock>28</Stock>
+<Precio>46.1</Precio>
+</Producto>
+<Producto id="11">
+<Codigo>HDV236</Codigo>
+<Descripcion>Manubrio BMX negro </Descripcion>
+<Marca>Chao Yang</Marca>
+<Procedencia>Japon</Procedencia>
+<Stock>9</Stock>
+<Precio>1.7</Precio>
+</Producto>
+<Producto id="12">
+<Codigo>PRO003</Codigo>
+<Descripcion>Protector pinion metal</Descripcion>
+<Marca>Shimano</Marca>
+<Procedencia>Taiwan</Procedencia>
+<Stock>19</Stock>
+<Precio>1.5</Precio>
+</Producto>
+<Producto id="13">
+<Codigo>TNS56</Codigo>
+<Descripcion>Tensor de bicicleta montañera</Descripcion>
+<Marca>Sunrase</Marca>
+<Procedencia>Taiwan</Procedencia>
+<Stock>16</Stock>
+<Precio>6.0</Precio>
+</Producto>
+<Producto id="14">
+<Codigo>PAT026</Codigo>
+<Descripcion>Pata de apoyo</Descripcion>
+<Marca>Sunrase</Marca>
+<Procedencia>Taiwan</Procedencia>
+<Stock>26</Stock>
+<Precio>1.49</Precio>
+</Producto>
+<Producto id="15">
+<Codigo>TB75S</Codigo>
+<Descripcion>Tubo de bicicleta A/V 12</Descripcion>
+<Marca>King diamond</Marca>
+<Procedencia>Vietnam</Procedencia>
+<Stock>66</Stock>
+<Precio>2.75</Precio>
+</Producto>
+<Producto id="16">
+<Codigo>PIS001</Codigo>
+<Descripcion>Pista delantera con ceja</Descripcion>
+<Marca>Diadem</Marca>
+<Procedencia>India</Procedencia>
+<Stock>100</Stock>
+<Precio>0.12</Precio>
+</Producto>
+<Producto id="17">
+<Codigo>ABT567</Codigo>
+<Descripcion>Abrazadera de montura</Descripcion>
+<Marca>Suntor</Marca>
+<Procedencia>Taiwan</Procedencia>
+<Stock>15</Stock>
+<Precio>2.5</Precio>
+</Producto>
+<Producto id="18">
+<Codigo>TRI001</Codigo>
+<Descripcion>Trinche 20 BMX niquelado</Descripcion>
+<Marca>Suntor</Marca>
+<Procedencia>Taiwan</Procedencia>
+<Stock>3</Stock>
+<Precio>14.5</Precio>
+</Producto>
+<Producto id="19">
+<Codigo>TEN005</Codigo>
+<Descripcion>Tensor 26 MTB niquelado</Descripcion>
+<Marca>Eagle</Marca>
+<Procedencia>China</Procedencia>
+<Stock>15</Stock>
+<Precio>3.5</Precio>
+</Producto>
+<Producto id="20">
+<Codigo>CD32A</Codigo>
+<Descripcion>Cuadro de aluminio 26</Descripcion>
+<Marca>Eagle</Marca>
+<Procedencia>Colombia</Procedencia>
+<Stock>13</Stock>
+<Precio>95.0</Precio>
+</Producto>
+<Producto id="21">
+<Codigo>TH34S</Codigo>
+<Descripcion>Tubo de bicicleta E/V 20</Descripcion>
+<Marca>Destone</Marca>
+<Procedencia>China</Procedencia>
+<Stock>0</Stock>
+<Precio>4.0</Precio>
+</Producto>
+</Productos>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d716a3ab-c993-459c-a227-2eceb73acbe5">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Title" fontName="Arial" fontSize="26" isBold="true" pdfFontName="Helvetica-Bold"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<parameter name="parameter1" class="java.util.Date">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT tablafactura.*,clientenombre,clienteapellido
+                        FROM tablacliente
+                        INNER JOIN tablafactura on tablacliente.clientecedula=tablafactura.facturaclientecedula
+                        WHERE facturafechacompra= $P{parameter1}
+                        GROUP BY tablafactura.facturaid, tablacliente.clientenombre, tablacliente.clienteapellido]]>
+	</queryString>
+	<field name="facturaid" class="java.lang.Integer"/>
+	<field name="facturaclientecedula" class="java.lang.String"/>
+	<field name="facturafechacompra" class="java.sql.Date"/>
+	<field name="facturasubtotal" class="java.math.BigDecimal"/>
+	<field name="facturaiva" class="java.math.BigDecimal"/>
+	<field name="facturatotal" class="java.math.BigDecimal"/>
+	<field name="facturaestado" class="java.lang.Integer"/>
+	<field name="facturanumero" class="java.lang.Integer"/>
+	<field name="clientenombre" class="java.lang.String"/>
+	<field name="clienteapellido" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="70" splitType="Stretch">
+			<staticText>
+				<reportElement style="Title" x="0" y="13" width="263" height="33" uuid="e69d2480-d741-4553-846d-d588db9cb998"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Facturas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="SubTitle" x="0" y="48" width="124" height="22" uuid="591997cd-28c9-4c02-8ff1-3085df7be25c"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[correspondientes a:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="124" y="46" width="100" height="20" uuid="12ab41ec-fd25-4839-bca0-28ebf0fe8074"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{parameter1}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="36" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="35" width="555" height="1" uuid="1e0b272a-0d4b-41ca-85a2-6c84e02822f9"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement style="Column header" x="0" y="19" width="92" height="15" uuid="2a8138f3-6818-41b7-8b47-5e4c83182fe6"/>
+				<text><![CDATA[Num. Factura]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="92" y="19" width="92" height="15" uuid="370b6c67-a6e2-4582-a7ff-eb04dca59df2"/>
+				<text><![CDATA[Cedula]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="184" y="19" width="92" height="15" uuid="8a93e2b2-1a05-4e02-8457-d7a999cb4927"/>
+				<text><![CDATA[Nombre]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="276" y="19" width="92" height="15" uuid="52f9c68e-b1c7-454b-93cf-45b298f161cd"/>
+				<text><![CDATA[Apellido]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="368" y="19" width="92" height="15" uuid="ca9efb57-e31b-469a-86d2-2a3790c040ec"/>
+				<text><![CDATA[Fecha Emision]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="460" y="19" width="92" height="15" uuid="5b28cdad-e2d6-4bc5-9084-442f5b741e6e"/>
+				<text><![CDATA[Valor Total]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="16" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="15" width="555" height="1" uuid="b7f3bdc6-bdef-40e7-91c2-74ea21a40bfa"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement style="Detail" x="0" y="0" width="92" height="15" uuid="7a1f5079-4519-4e78-af84-72c77ded644b"/>
+				<textFieldExpression><![CDATA[$F{facturanumero}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="92" y="0" width="92" height="15" uuid="6216fa6d-0a51-4188-9c76-eaba718eea92"/>
+				<textFieldExpression><![CDATA[$F{facturaclientecedula}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="184" y="0" width="92" height="15" uuid="60bc064f-dad4-4d19-8ef4-c8963095505d"/>
+				<textFieldExpression><![CDATA[$F{clientenombre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="276" y="0" width="92" height="15" uuid="e7396eee-7142-46e2-a694-ccfb2420ce98"/>
+				<textFieldExpression><![CDATA[$F{clienteapellido}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="368" y="0" width="92" height="15" uuid="a53123ef-c45c-4eef-94cb-f49a6b386609"/>
+				<textFieldExpression><![CDATA[$F{facturafechacompra}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="460" y="0" width="92" height="15" uuid="1f42eae6-3721-44ee-a86c-a9115bd68f06"/>
+				<textFieldExpression><![CDATA[$F{facturatotal}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="3" width="555" height="1" uuid="db4d803d-696f-4134-9e1a-7f27703a4380"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement style="Column header" x="433" y="0" width="80" height="20" uuid="f13edd23-4222-471b-82b0-eff5df8c07d9"/>
+				<textElement textAlignment="Right">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement style="Column header" x="513" y="0" width="40" height="20" uuid="04dc9b8a-8ff6-48b9-bd06-f96f88d0c8f1"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement style="Column header" x="0" y="0" width="197" height="20" uuid="2a91d5d6-2ae7-44d2-8f68-249624c9655b"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
