@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+<<<<<<< HEAD
     <system systemId="http://localhost:8080/BicirepuestosLogicaNegocio/BicirepuestosLogicaNegocio?wsdl" uri="src/conf/xml-resources/web-service-references/BicirepuestosLogicaNegocio/wsdl/localhost_8080/BicirepuestosLogicaNegocio/BicirepuestosLogicaNegocio.wsdl"/>
     <system systemId="http://localhost:8080/BicirepuestosLogicaNegocio/BicirepuestosLogicaNegocio?xsd=1" uri="src/conf/xml-resources/web-service-references/BicirepuestosLogicaNegocio/wsdl/localhost_8080/BicirepuestosLogicaNegocio/BicirepuestosLogicaNegocio.xsd_1.xsd"/>
     <system systemId="http://localhost:8080/factimeLN/factimeLogicaNegocio?wsdl" uri="src/conf/xml-resources/web-service-references/factimeLogicaNegocio/wsdl/localhost_8080/factimeLN/factimeLogicaNegocio.wsdl"/>
@@ -17,4 +18,19 @@
     <system systemId="http://localhost:8080/iejsaLN/factimeLogicaNegocio?wsdl" uri="src/conf/xml-resources/web-service-references/factimeLogicaNegocio/wsdl/localhost_8080/iejsaLN/factimeLogicaNegocio.wsdl"/>
     <system systemId="http://localhost:8080/iejsaLN/factimeLogicaNegocio?xsd=1" uri="src/conf/xml-resources/web-service-references/factimeLogicaNegocio/wsdl/localhost_8080/iejsaLN/factimeLogicaNegocio.xsd_1.xsd"/>
     <system systemId="http://localhost:8080/iejsaLN/factimeLogicaNegocio?xsd=2" uri="src/conf/xml-resources/web-service-references/factimeLogicaNegocio/wsdl/localhost_8080/iejsaLN/factimeLogicaNegocio.xsd_2.xsd"/>
+=======
+    <system systemId="http://localhost:8080/BicirepuestosAccesoDatos/BicirepuestosAccesoDatos?wsdl" uri="src/conf/xml-resources/web-service-references/BicirepuestosAccesoDatos/wsdl/localhost_8080/BicirepuestosAccesoDatos/BicirepuestosAccesoDatos.wsdl"/>
+    <system systemId="http://localhost:8080/BicirepuestosAccesoDatos/BicirepuestosAccesoDatos?xsd=1" uri="src/conf/xml-resources/web-service-references/BicirepuestosAccesoDatos/wsdl/localhost_8080/BicirepuestosAccesoDatos/BicirepuestosAccesoDatos.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/factimeAD/BicirepuestosAccesoDatos?wsdl" uri="src/conf/xml-resources/web-service-references/BicirepuestosAccesoDatos/wsdl/localhost_8080/factimeAD/BicirepuestosAccesoDatos.wsdl"/>
+    <system systemId="http://localhost:8080/factimeAD/BicirepuestosAccesoDatos?xsd=1" uri="src/conf/xml-resources/web-service-references/BicirepuestosAccesoDatos/wsdl/localhost_8080/factimeAD/BicirepuestosAccesoDatos.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/factimeAD/factimeAccesoDatos?WSDL" uri="src/conf/xml-resources/web-services/NewWebServiceFromWSDL/wsdl/localhost_8080/factimeAD/factimeAccesoDatos.wsdl"/>
+    <system systemId="http://localhost:35244/factimeAD/factimeAccesoDatos?wsdl" uri="src/conf/xml-resources/web-service-references/factimeAccesoDatos/wsdl/localhost_35244/factimeAD/factimeAccesoDatos.wsdl"/>
+    <system systemId="http://localhost:35244/factimeAD/factimeAccesoDatos?xsd=1" uri="src/conf/xml-resources/web-service-references/factimeAccesoDatos/wsdl/localhost_35244/factimeAD/factimeAccesoDatos.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/factimeAD/factimeAccesoDatos?wsdl" uri="src/conf/xml-resources/web-service-references/factimeAccesoDatos/wsdl/localhost_8080/factimeAD/factimeAccesoDatos.wsdl"/>
+    <system systemId="http://localhost:8080/factimeAD/factimeAccesoDatos?xsd=1" uri="src/conf/xml-resources/web-service-references/factimeAccesoDatos/wsdl/localhost_8080/factimeAD/factimeAccesoDatos.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/afernandezAD/factimeAccesoDatos?wsdl" uri="src/conf/xml-resources/web-service-references/factimeAccesoDatos/wsdl/localhost_8080/afernandezAD/factimeAccesoDatos.wsdl"/>
+    <system systemId="http://localhost:8080/afernandezAD/factimeAccesoDatos?xsd=1" uri="src/conf/xml-resources/web-service-references/factimeAccesoDatos/wsdl/localhost_8080/afernandezAD/factimeAccesoDatos.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/iejsaAD/factimeAccesoDatos?wsdl" uri="src/conf/xml-resources/web-service-references/factimeAccesoDatos/wsdl/localhost_8080/iejsaAD/factimeAccesoDatos.wsdl"/>
+    <system systemId="http://localhost:8080/iejsaAD/factimeAccesoDatos?xsd=1" uri="src/conf/xml-resources/web-service-references/factimeAccesoDatos/wsdl/localhost_8080/iejsaAD/factimeAccesoDatos.xsd_1.xsd"/>
+>>>>>>> origin/master
 </catalog>

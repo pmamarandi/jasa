@@ -8,6 +8,7 @@
             </extension>
         </buildExtensions>
         <data xmlns="http://www.netbeans.org/ns/web-project/3">
+<<<<<<< HEAD
             <name>iejsaIU</name>
             <minimum-ant-version>1.6.5</minimum-ant-version>
             <web-module-libraries>
@@ -178,6 +179,17 @@
             </source-roots>
             <test-roots>
                 <root id="test.src.dir"/>
+=======
+            <name>iejsaLN</name>
+            <minimum-ant-version>1.6.5</minimum-ant-version>
+            <web-module-libraries/>
+            <web-module-additional-libraries/>
+            <source-roots>
+                <root id="src.dir" name="Source Packages"/>
+            </source-roots>
+            <test-roots>
+                <root id="test.src.dir" name="Test Packages"/>
+>>>>>>> origin/master
             </test-roots>
         </data>
     </configuration>

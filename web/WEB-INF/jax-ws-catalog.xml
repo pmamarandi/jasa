@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+<<<<<<< HEAD
     <system systemId="http://localhost:8080/BicirepuestosLogicaNegocio/BicirepuestosLogicaNegocio?wsdl" uri="wsdl/localhost_8080/BicirepuestosLogicaNegocio/BicirepuestosLogicaNegocio.wsdl"/>
     <system systemId="http://localhost:8080/BicirepuestosLogicaNegocio/BicirepuestosLogicaNegocio?xsd=1" uri="wsdl/localhost_8080/BicirepuestosLogicaNegocio/BicirepuestosLogicaNegocio.xsd_1.xsd"/>
     <system systemId="http://localhost:8080/factimeLN/factimeLogicaNegocio?wsdl" uri="wsdl/localhost_8080/factimeLN/factimeLogicaNegocio.wsdl"/>
@@ -14,4 +15,18 @@
     <system systemId="http://localhost:8080/iejsaLN_DIRECTORIO/factimeLogicaNegocio_directorio?wsdl" uri="wsdl/localhost_8080/iejsaLN_DIRECTORIO/factimeLogicaNegocio_directorio.wsdl"/>
     <system systemId="http://localhost:8080/iejsaLN_DIRECTORIO/factimeLogicaNegocio_directorio?xsd=1" uri="wsdl/localhost_8080/iejsaLN_DIRECTORIO/factimeLogicaNegocio_directorio.xsd_1.xsd"/>
     <system systemId="http://localhost:8080/iejsaLN_DIRECTORIO/factimeLogicaNegocio_directorio?xsd=2" uri="wsdl/localhost_8080/iejsaLN_DIRECTORIO/factimeLogicaNegocio_directorio.xsd_2.xsd"/>
+=======
+    <system systemId="http://localhost:8080/BicirepuestosAccesoDatos/BicirepuestosAccesoDatos?wsdl" uri="wsdl/localhost_8080/BicirepuestosAccesoDatos/BicirepuestosAccesoDatos.wsdl"/>
+    <system systemId="http://localhost:8080/BicirepuestosAccesoDatos/BicirepuestosAccesoDatos?xsd=1" uri="wsdl/localhost_8080/BicirepuestosAccesoDatos/BicirepuestosAccesoDatos.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/factimeAD/BicirepuestosAccesoDatos?wsdl" uri="wsdl/localhost_8080/factimeAD/BicirepuestosAccesoDatos.wsdl"/>
+    <system systemId="http://localhost:8080/factimeAD/BicirepuestosAccesoDatos?xsd=1" uri="wsdl/localhost_8080/factimeAD/BicirepuestosAccesoDatos.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/factimeAD/factimeAccesoDatos?wsdl" uri="wsdl/localhost_8080/factimeAD/factimeAccesoDatos.wsdl"/>
+    <system systemId="http://localhost:8080/factimeAD/factimeAccesoDatos?xsd=1" uri="wsdl/localhost_8080/factimeAD/factimeAccesoDatos.xsd_1.xsd"/>
+    <system systemId="http://localhost:35244/factimeAD/factimeAccesoDatos?wsdl" uri="wsdl/localhost_35244/factimeAD/factimeAccesoDatos.wsdl"/>
+    <system systemId="http://localhost:35244/factimeAD/factimeAccesoDatos?xsd=1" uri="wsdl/localhost_35244/factimeAD/factimeAccesoDatos.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/afernandezAD/factimeAccesoDatos?wsdl" uri="wsdl/localhost_8080/afernandezAD/factimeAccesoDatos.wsdl"/>
+    <system systemId="http://localhost:8080/afernandezAD/factimeAccesoDatos?xsd=1" uri="wsdl/localhost_8080/afernandezAD/factimeAccesoDatos.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/iejsaAD/factimeAccesoDatos?wsdl" uri="wsdl/localhost_8080/iejsaAD/factimeAccesoDatos.wsdl"/>
+    <system systemId="http://localhost:8080/iejsaAD/factimeAccesoDatos?xsd=1" uri="wsdl/localhost_8080/iejsaAD/factimeAccesoDatos.xsd_1.xsd"/>
+>>>>>>> origin/master
 </catalog>
